@@ -1,0 +1,52 @@
+.footer {
+    background-color: #333; /* Color de fondo del footer */
+    color: white; /* Color del texto */
+    padding: 05px; /* Espaciado interno */
+    position: fixed; /* Fija el footer en la parte inferior */
+    bottom: 0; /* Coloca el footer en la parte inferior */
+    left: 0; /* Alinea el footer al borde izquierdo */
+    width: 100%; /* Asegura que el footer cubra todo el ancho del viewport */
+    text-align: left; /* Alinea el texto a la izquierda */
+    z-index: 1000; /* Asegura que el footer esté por encima de otros elementos */
+    justify-content: space-between;
+    z-index: -1;
+  }
+  
+  .footer-content {
+    display: flex; /* Alinea los elementos horizontalmente */
+    flex-direction: row; /* Alinea los elementos en una fila */
+    flex-wrap: wrap; /* Permite que el contenido se envuelva si no cabe en una línea */
+    gap: 10px; /* Espacio entre los elementos */
+    align-items: center; /* Centra los elementos verticalmente */
+    font-size: 11px
+  }
+  
+  .company-info {
+    display: flex;
+    flex-direction: row; /* Alinea la información horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+  }
+  
+  .company-info p {
+    margin: 0 10px; /* Espacio a los lados de cada párrafo */
+  }
+  
+  .separator {
+    margin: 0 10px; /* Espacio a los lados del separador */
+  }
+  
+  .social-links {
+    display: flex; /* Alinea los iconos horizontalmente */
+    gap: 10px; /* Espacio entre los iconos */
+    margin-left: 550px; /* Empuja los iconos hacia el extremo derecho */
+  }
+  
+  .social-links a {
+    color: white; /* Color de los iconos */
+    font-size: 20px; /* Tamaño de los iconos */
+    transition: color 0.3s ease; /* Transición suave para el color */
+  }
+  
+  .social-links a:hover {
+    color: #f0f0f0; /* Color de los iconos al pasar el ratón por encima */
+  }

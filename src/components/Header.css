@@ -1,0 +1,66 @@
+.header {
+    background-color: #33333383; /* Color de fondo de la barra */
+    padding: 1px 80px; /* Espaciado interno */
+    color: white; /* Color del texto */
+    position: fixed; /* Fija el header en la parte superior */
+    top: 0; /* Coloca el header en la parte superior */
+    left: 0; /* Alinea el header al borde izquierdo */
+    width: 100%; /* Asegura que el header cubra todo el ancho del viewport */
+    z-index: 1000; /* Asegura que el header esté encima de otros elementos */
+    display: flex;
+    justify-content: space-between; /* Distribuye el contenido al inicio y al final */
+    align-items: center; /* Centra los elementos verticalmente */
+  }
+  
+  .auth-links {
+    display: flex; /* Alinea los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    margin-right: 100px; /* Ajusta este margen para mover los enlaces a la izquierda */
+  }
+  
+  .auth-links a {
+    margin-left: 10px; /* Reduce el espaciado entre los enlaces de autenticación */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: white; /* Color del texto de los enlaces */
+    font-size: 16px; /* Tamaño de la fuente */
+    transition: color 0.3s ease; /* Transición suave para el color del texto */
+  }
+  
+  .auth-links a:hover {
+    color: #74cbee; /* Color del texto al pasar el ratón por encima */
+  }
+  
+  .promo-container {
+    display: flex; /* Alinea los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    overflow: hidden; /* Oculta el texto que se deslice fuera del contenedor */
+    width: 60%; /* Ajusta según sea necesario */
+  }
+  
+  .promo-label {
+    white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
+    margin-right: 10px; /* Espacio entre el texto fijo y el animado */
+    font-size: 16px; /* Tamaño de la fuente */
+    font-weight: bold; /* Negrita para el texto fijo */
+  }
+  
+  .promo-text-container {
+    overflow: hidden; /* Oculta el texto que se deslice fuera del contenedor */
+    white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
+    flex: 1; /* Permite que el contenedor use todo el espacio disponible */
+  }
+  
+  .promo-text {
+    display: inline-block;
+    padding-left: 100%; /* Empieza el texto fuera de la vista */
+    animation: slide 30s linear infinite; /* Controla la animación */
+  }
+  
+  @keyframes slide {
+    from {
+      transform: translateX(0); /* Comienza en el borde izquierdo */
+    }
+    to {
+      transform: translateX(-100%); /* Desliza hacia la izquierda hasta el borde derecho */
+    }
+  }

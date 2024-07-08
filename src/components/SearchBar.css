@@ -1,0 +1,44 @@
+.search-bar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajusta la altura si es necesario */
+    width: 100%; /* Asegura que el contenedor use todo el ancho del viewport */
+    position: fixed; /* O `fixed`, según la necesidad */
+    top: -280; /* Ajusta según la necesidad */
+    left: 480; /* Ajusta según la necesidad */
+    margin: 0;
+    /* Ajusta los márgenes para mover la barra de búsqueda */
+  }
+  .search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: auto; /* Ajusta el ancho si es necesario */
+
+  }
+
+  .search-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    width: 300px; /* Ajusta el ancho según lo necesario */
+  }
+  
+  .search-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-left: none;
+    background-color: #333;
+    color: white;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+  }
+  
+  .search-button:hover {
+    background-color: #6cc0e7;
+  }

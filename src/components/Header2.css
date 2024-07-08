@@ -1,0 +1,41 @@
+.header2 {
+    background-color: #44444496; /* Color de fondo del banner */
+    padding: 10px 20px; /* Espaciado interno */
+    color: white; /* Color del texto */
+    width: 100%; /* Asegura que el banner cubra todo el ancho del viewport */
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    position: fixed; /* Fija el header en la parte superior */
+    top: 160; /* Coloca el header en la parte superior */
+    left: 0; /* Alinea el header al borde izquierdo */
+  }
+  
+  .services-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .services-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .service-item {
+    margin: 0 15px;
+  }
+  
+  .service-item a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .service-item a:hover {
+    color: #74cbee;
+  }

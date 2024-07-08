@@ -1,0 +1,31 @@
+.info-section {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px; /* Ajusta el ancho máximo del contenedor */
+    width: 90%; /* Ajusta el ancho del contenedor en relación al ancho del viewport */
+    margin: 30px auto; /* Centra el contenedor horizontalmente */
+    position: fixed; /* Asegura que se puedan usar top, right, bottom, left */
+    top: 250px; /* Ajusta la posición vertical (hacia abajo) */
+    left: 1000; /* No mueve el contenedor horizontalmente desde su posición original */
+    transform: translateX(-50%); /* Centra horizontalmente el contenedor */
+  }
+  
+  .info-section h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center; /* Centra el título horizontalmente */
+  }
+  
+  .info-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left; /* Alinea el contenido de la lista a la izquierda */
+  }
+  
+  .info-list li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+  }
